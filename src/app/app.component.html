@@ -1,0 +1,8 @@
+<kendo-tabstrip (tabSelect)="onTabSelect($event)">
+  <kendo-tabstrip-tab *ngFor=" let item of modules let i=index" [title]=item.name [selected]="i == selected">
+    <ng-template kendoTabContent>
+    </ng-template>
+  </kendo-tabstrip-tab>
+</kendo-tabstrip>
+
+<router-outlet></router-outlet>
